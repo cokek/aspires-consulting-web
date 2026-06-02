@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import FramedImageClickable from './FramedImageClickable'
 import Button from './Button'
 import { CiLinkedin } from 'react-icons/ci'
@@ -26,6 +26,11 @@ type PersonnelOverlayProps = {
 }
 
 const PersonnelOverlay = ({ image, name, consultationFee, bio, paymentDetails, socials, onClose }: PersonnelOverlayProps) => {
+  useEffect(() => {
+    document.body.style.overflow = 'hidden'
+    return () => { document.body.style.overflow = '' }
+  }, [])
+
   return (
     <div
       className="fixed inset-0 z-100 bg-background overflow-y-auto"
