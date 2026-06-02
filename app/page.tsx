@@ -1,6 +1,7 @@
 import Hero from "./components/sections/Hero";
 import WhoWeAre from "./components/sections/WhoWeAre";
 import WhatWeDo from "./components/sections/WhatWeDo";
+import KeyPersonnel from "./components/sections/KeyPersonnel";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <WhoWeAre />
       <WhatWeDo />
+      <KeyPersonnel />
     </main>
   );
 }
