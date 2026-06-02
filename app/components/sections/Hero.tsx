@@ -8,7 +8,7 @@ const Hero = () => {
   return (
    <section className="w-full py-25 flex flex-col gap-18">
 <div className="flex flex-col gap-5">
-<h1>Find the Right Expert. <br/>Get the Right Advice.</h1>
+<h1 className="text-primary">Find the Right Expert. <br/>Get the Right Advice.</h1>
 
 <div className="flex flex-col gap-3">
 <p>Aspires connects you with vetted professionals across every field, so you can access credible expertise, make informed decisions, and move forward with confidence.</p>
