@@ -32,10 +32,7 @@ body {
   font-family: var(--font-raleway), sans-serif;
 }
 
-button {
-  background: none;
-  border: none;
-}
+
 
 a, button {
   cursor: pointer;

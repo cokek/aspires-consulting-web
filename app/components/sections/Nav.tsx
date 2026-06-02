@@ -4,10 +4,10 @@ import React, { useState, useRef, useEffect } from 'react'
 import icon from '@/app/images/icon.png'
 import Image from 'next/image'
 import Link from 'next/link'
-import { MdMenu, MdClose, MdApps, MdWork, MdBadge, MdPersonAdd } from "react-icons/md"
+import { MdMenu, MdClose, MdGroups, MdWork, MdBadge, MdPersonAdd } from "react-icons/md"
 
 const navLinks = [
-  { label: 'Who we are',    href: '#about',     icon: MdApps },
+  { label: 'Who we are',    href: '#about',     icon: MdGroups },
   { label: 'What we do',    href: '#services',  icon: MdWork },
   { label: 'Key personnel', href: '#team',      icon: MdBadge },
   { label: 'Contact a pro', href: '#contact',   icon: MdPersonAdd },
@@ -28,7 +28,7 @@ const Nav = () => {
   }, [])
 
   return (
-    <nav className="flex items-center justify-between p-4 bg-background drop-shadow-sm absolute top-0 left-0 right-0 z-50">
+    <nav className="flex items-center justify-between p-4 bg-background drop-shadow-sm fixed top-0 left-0 right-0 z-50">
       <Link href="/">
         <Image src={icon} alt="Logo" width={500} height={500} className="h-6 w-auto" />
       </Link>
