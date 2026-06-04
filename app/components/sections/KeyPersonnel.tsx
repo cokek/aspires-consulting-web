@@ -7,7 +7,9 @@ const KeyPersonnel = () => {
 
  
   return (
-    <section className="w-full py-20 flex flex-col gap-20 items-center" id="team">
+    <section className="w-full py-20 flex flex-col gap-20 items-center 
+    md:items-start md:gap-25
+    " id="team">
 <h1>Key personnel</h1>
 
 

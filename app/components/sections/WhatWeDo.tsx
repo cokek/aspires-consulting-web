@@ -26,10 +26,14 @@ const WhatWeDo = () => {
     },
   ]
   return (
-    <section className="w-full py-20 flex flex-col gap-20 items-center" id="services">
+    <section className="w-full py-20 flex flex-col gap-20 items-center
+    md:items-start md:gap-25
+    " id="services">
 <h1>What we do</h1>
 
-<ul className="flex flex-col gap-16 w-[270px]">
+<ul className="grid grid-cols-1  gap-16 w-[270px]
+md:grid-cols-2 md:w-full md:gap-20
+">
   {whatWeDo.map(({ heading, content, image }, i) => (
     <li key={i} className="flex flex-col gap-8">
       <FramedImage image={image} alt={heading} className="w-full h-[320px]" />

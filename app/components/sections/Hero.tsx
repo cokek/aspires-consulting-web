@@ -21,7 +21,7 @@ md:w-full
 </div>
 </div>
 
-<FramedImage image="/images/hero-meeting.jpg" alt="Hero Image" className="w-full h-[360px] object-cover md:h-[450px]" />
+<FramedImage image="/images/hero-meeting.jpg" alt="Hero Image" className="w-full h-[360px] object-cover md:h-[450px] md:w-[500px]" />
    </section>
   )
 }

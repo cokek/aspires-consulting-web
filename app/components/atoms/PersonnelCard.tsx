@@ -43,7 +43,9 @@ const PersonnelCard = ({ image, name, consultationFee, bio, services, paymentDet
 
   return (
     <>
-      <li className="flex flex-col gap-10 w-[270px]">
+      <li className="flex flex-col gap-10 w-[270px]
+      md:w-full
+      ">
         <FramedImageClickable
           image={resolvedImage}
           alt={name}

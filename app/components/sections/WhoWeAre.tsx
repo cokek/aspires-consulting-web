@@ -27,11 +27,13 @@ const WhoWeAre = () => {
   const activeItem = active !== null ? whoWeAre[active] : whoWeAre[0]
 
   return (
-    <section className="w-full py-20 flex flex-col gap-12 items-center" id="about" onClick={() => setActive(null)}>
+    <section className="w-full py-20 flex flex-col gap-12 items-center
+    md:items-start
+    " id="about" onClick={() => setActive(null)}>
 <h1>Who we are</h1>
 
 <div className="flex gap-5 items-end">
-<FramedImage image={activeItem.image} alt={activeItem.alt} className="w-full h-[500px] object-cover hidden md:block" />
+<FramedImage image={activeItem.image} alt={activeItem.alt} className="w-full h-[500px] object-cover hidden md:block md:w-[500px]" />
 
 <ul className="flex flex-col gap-5 w-full">
     {whoWeAre.map(({ text }, i) => (

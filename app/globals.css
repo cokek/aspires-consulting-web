@@ -41,10 +41,6 @@ a, button {
 
 
 
-a, button:focus {
-  outline: none;
-}
-
 h1{
   font-size: 32px;
   font-weight: 700;
@@ -74,7 +70,7 @@ h2{
     font-size: 40px;
   }
   h2{
-    font-size: 32px;
+    font-size: 24px;
   }
 }
 
