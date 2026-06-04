@@ -69,4 +69,12 @@ h2{
   }
 }
 
+@media (min-width: 768px) {
+  h1{
+    font-size: 40px;
+  }
+  h2{
+    font-size: 32px;
+  }
+}
 

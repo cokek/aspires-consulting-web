@@ -5,7 +5,7 @@ import KeyPersonnel from "./components/sections/KeyPersonnel";
 import ContactAPro from "./components/sections/ContactAPro";
 export default function Home() {
   return (
-    <main className="flex-1 px-4">
+    <main className="flex-1 px-4 md:px-10">
       <Hero />
       <WhoWeAre />
       <WhatWeDo />

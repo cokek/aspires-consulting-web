@@ -28,12 +28,14 @@ const Nav = () => {
   }, [])
 
   return (
-    <nav className="flex items-center justify-between p-4 bg-background drop-shadow-sm sticky top-0 left-0 right-0 z-50">
+    <nav className="flex items-center justify-between p-4 bg-background drop-shadow-sm sticky top-0 left-0 right-0 z-50
+    md:px-10
+    ">
       <Link href="/">
         <Image src={icon} alt="Logo" width={500} height={500} className="h-6 w-auto" />
       </Link>
 
-      <div className="relative" ref={menuRef}>
+      <div className="relative md:hidden" ref={menuRef}>
         <button
           onClick={() => setOpen((prev) => !prev)}
           className="text-2xl text-text hover:text-hover transition-colors"
@@ -61,6 +63,13 @@ const Nav = () => {
           </div>
         )}
       </div>
+
+      <ul className="hidden md:flex items-center gap-4 text-xs font-medium">
+        <li><Link href="/#about" className="hover:text-hover transition-colors">Who we are</Link></li>
+        <li><Link href="/#services" className="hover:text-hover transition-colors">What we do</Link></li>
+        <li><Link href="/#team" className="hover:text-hover transition-colors">Key personnel</Link></li>
+        <li><Link href="/#contact" className="hover:text-hover transition-colors">Contact a pro</Link></li>
+      </ul>
     </nav>
   )
 }

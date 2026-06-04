@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-const DEFAULT_IMAGE = 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1000&q=80'
+const DEFAULT_IMAGE = '/images/hero-meeting.jpg'
 
 const MARQUEE_TEXT = Array(20).fill('ASPIRES').join('')
 

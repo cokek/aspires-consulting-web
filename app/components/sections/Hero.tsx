@@ -6,8 +6,12 @@ import FramedImage from '../atoms/FramedImage'
 
 const Hero = () => {
   return (
-   <section className="w-full py-25 flex flex-col gap-18">
-<div className="flex flex-col gap-5">
+   <section className="w-full py-25 flex flex-col gap-18
+   md:flex-row md:items-end md:gap-6
+   ">
+<div className="flex flex-col gap-5
+md:w-full
+">
 <h1 className="text-primary">Find the Right Expert. <br/>Get the Right Advice.</h1>
 
 <div className="flex flex-col gap-3">
@@ -17,7 +21,7 @@ const Hero = () => {
 </div>
 </div>
 
-<FramedImage image="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1000&q=80" alt="Hero Image" className="w-full h-[360px] object-cover" />
+<FramedImage image="/images/hero-meeting.jpg" alt="Hero Image" className="w-full h-[360px] object-cover md:h-[450px]" />
    </section>
   )
 }
