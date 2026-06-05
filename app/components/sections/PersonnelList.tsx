@@ -13,8 +13,8 @@ const PersonnelList = async () => {
 
   return (
     <ul className="grid grid-cols-1 gap-16 w-[270px]
-    md:grid-cols-2 md:w-full md:gap-20
-    xl:grid-cols-3 
+    md:grid-cols-2 md:w-fit md:gap-20
+    xl:grid-cols-3 xl:w-full
     ">
       {personnel.map((person, i) => (
         <PersonnelCard key={i} {...person} />

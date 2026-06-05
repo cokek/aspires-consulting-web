@@ -22,7 +22,7 @@ md:w-full xl:gap-8
 </div>
 </div>
 
-<FramedImage image="/images/hero-meeting.jpg" alt="Hero Image" className="w-full h-[360px] object-cover shrink-0 md:h-[300px] md:w-[330px] xl:h-[500px]" />
+<FramedImage image="/images/consult-pros.jpg" alt="Hero Image" className="w-full h-[360px] object-cover shrink-0 md:h-[300px] md:w-[330px] xl:h-[500px]" />
    </section>
   )
 }

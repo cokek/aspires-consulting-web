@@ -7,7 +7,7 @@ const WhatWeDo = () => {
     {
       heading: 'Professional Consultations',
       content: 'Browse and connect with vetted experts across a wide range of industries and disciplines. Whether you need specialist advice, a second opinion, or ongoing professional guidance, our platform gives you direct access to the right person for your specific need.',
-      image: '/images/consultations.jpg',
+      image: '/images/pro-consult.jpg',
     },
     {
       heading: 'IT Training',
@@ -33,11 +33,11 @@ const WhatWeDo = () => {
 <h1>What we do</h1>
 
 <ul className="grid grid-cols-1  gap-16 w-[270px]
-md:grid-cols-2 md:w-full md:gap-20
-xl:grid-cols-3 
+md:grid-cols-2 md:w-fit md:gap-20
+xl:grid-cols-3 xl:w-full
 ">
   {whatWeDo.map(({ heading, content, image }, i) => (
-    <li key={i} className="flex flex-col gap-8 xl:gap-10">
+    <li key={i} className="flex flex-col gap-8 md:w-[322px] xl:gap-10 xl:w-full">
       <FramedImage image={image} alt={heading} className="w-full h-[320px] xl:h-[450px]" />
       <div className="flex flex-col gap-3 text-center xl:text-left">
         <h2>{heading}</h2>
