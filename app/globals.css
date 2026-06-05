@@ -30,8 +30,9 @@ body {
   background: var(--background);
   color: var(--text);
   font-family: var(--font-raleway), sans-serif;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 
@@ -81,6 +82,9 @@ h2{
   }
   h2{
     font-size: 36px;
+  }
+  h3{
+    font-size: 24px;
   }
   p{
     font-size: 24px;

@@ -37,13 +37,14 @@ const Footer = () => {
         {MARQUEE_TEXT}
       </span>
 
-      <section className="w-full flex flex-col gap-12 py-12 px-4 bg-text text-background
+      <section className="w-full flex flex-col gap-12 py-12 px-4 bg-text text-background justify-center
       md:flex-row
+      xl:px-9 xl:py-16 xl:gap-36
       ">
 
         {/* Brand */}
-        <div className="flex items-center flex-col gap-6 md:items-start">
-          <Image src={iconWhite} alt="Logo" width={500} height={500} className="h-14 w-auto" />
+        <div className="flex items-center flex-col gap-6 md:items-start ">
+          <Image src={iconWhite} alt="Logo" width={500} height={500} className="h-14 w-auto xl:h-22" />
           <span className="text-center md:text-left">Connecting you with the expertise that moves you forward.</span>
         </div>
 
@@ -91,7 +92,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <p className="text-center md:text-left">Created by <a href="https://peaceakoja-portfolio-v2.vercel.app/" target="_blank" className="underline hover:text-hover transition-colors">Peace Akoja</a>. All rights reserved.</p>
+        <span className="text-center self-end md:text-left">Created by <a href="https://peaceakoja-portfolio-v2.vercel.app/" target="_blank" className="underline hover:text-hover transition-colors">Peace Akoja</a>. All rights reserved.</span>
 
 </div>
       </section>
