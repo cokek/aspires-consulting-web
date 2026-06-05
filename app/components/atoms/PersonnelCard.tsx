@@ -55,7 +55,7 @@ const PersonnelCard = ({ image, name, consultationFee, bio, services, paymentDet
         />
         <div className="flex flex-col gap-3">
           <h2>{name}</h2>
-          <div className="flex items-center justify-between px-5 gap-2 h-12 border-radius-card border border-text">
+          <div className="flex items-center justify-between px-5 gap-2 h-12 border-radius-card border border-text xl:text-2xl xl:h-16">
             <span>Consultation fee</span>
             <strong>{consultationFee}</strong>
           </div>
@@ -63,7 +63,7 @@ const PersonnelCard = ({ image, name, consultationFee, bio, services, paymentDet
           {services && services !== '' && (
             <div className="flex flex-col gap-1 px-5 py-4 border-radius-card bg-secondary">
               <span className="font-bold">Services</span>
-              <p className="line-clamp-3">{services}</p>
+              <p className="line-clamp-3 xl:line-clamp-5">{services}</p>
             </div>
           )}
           <div className="grid grid-cols-2 gap-2">

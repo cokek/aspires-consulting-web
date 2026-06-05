@@ -22,7 +22,12 @@ const FramedImageClickable = ({ image, alt, className, imageClassName, onClick }
     <div className='flex items-center justify-center gap-3 h-12 w-full 
     bg-text text-background text-sm 
     transition-all duration-300
-    group-hover:bg-primary'>
+    group-hover:bg-primary
+    xl:text-xl 
+    xl:h-16
+    xl:px-6
+    xl:gap-4
+    '>
 <span className=''>Tap to expand</span>
 <FaExpandArrowsAlt />
     </div>

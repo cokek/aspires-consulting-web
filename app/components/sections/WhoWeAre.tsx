@@ -1,10 +1,21 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import FramedImage from '../atoms/FramedImage'
 
 const WhoWeAre = () => {
   const [active, setActive] = useState<number | null>(null)
+  const listRef = useRef<HTMLUListElement>(null)
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (listRef.current && !listRef.current.contains(e.target as Node)) {
+        setActive(null)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
 
   const whoWeAre = [
     {
@@ -30,7 +41,7 @@ const WhoWeAre = () => {
     <section className="w-full py-20 flex flex-col gap-12 items-center
     md:items-start
     xl:w-[1154px] xl:mx-auto xl:gap-25
-    " id="about" onClick={() => setActive(null)}>
+    " id="about">
 <h1>Who we are</h1>
 
 <div className="flex gap-5 items-end xl:gap-36">
@@ -39,15 +50,15 @@ className="w-full h-[500px] object-cover hidden md:block md:w-[400px]
 xl:w-[500px] 
 " />
 
-<ul className="flex flex-col gap-5 w-full">
+<ul ref={listRef} className="flex flex-col gap-5 w-full">
     {whoWeAre.map(({ text }, i) => (
       <li
         key={i}
-        onClick={(e) => { e.stopPropagation(); setActive(active === i ? null : i) }}
+        onClick={() => setActive(active === i ? null : i)}
         className={`transition-all duration-300 border-radius-card cursor-pointer  xl:text-2xl
           ${active === i
             ? 'bg-text text-background px-2 py-3 xl:px-4 xl:py-4'
-            : 'hover:bg-text hover:text-background hover:px-2 hover:py-3 xl:hover:px-4 xl:hover:py-4'
+            : 'hover:underline'
           }`}
       >
         {text}
