@@ -22,16 +22,20 @@ const steps = [
 const ContactAPro = () => {
   return (
     <section className="w-full py-20 flex flex-col gap-12 items-center
-    md:items-start" 
+    md:items-start
+    xl:w-[1154px] xl:mx-auto xl:gap-25 xl:pt-30 xl:pb-60"
     id="contact">
       <h1>Contact a pro</h1>
 
-      <ul className="flex flex-col gap-10">
+      <ul className="flex flex-col gap-10 md:gap-25">
         {steps.map(({ heading, content, image }, i) => (
           <li key={i} className={`flex gap-20 items-center ${i % 2 !== 0 ? 'flex-row-reverse' : ''}`}>
           <div key={i} className="flex flex-col gap-4">
-            <div className="flex flex-col items-center gap-3 md:items-start md:flex-row">
-              <span className="w-6 h-6 bg-text text-background rounded-full flex items-center justify-center text-sm font-bold shrink-0">
+            <div className="flex flex-col items-center gap-3  md:flex-row">
+              <span className="w-6 h-6 bg-text text-background rounded-full flex items-center justify-center text-sm font-bold shrink-0
+              
+              xl:text-2xl xl:h-12 xl:w-12
+              ">
                 {i + 1}
               </span>
               <h2 className="text-center md:text-left">{heading}</h2>
