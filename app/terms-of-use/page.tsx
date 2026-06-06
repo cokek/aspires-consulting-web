@@ -7,7 +7,10 @@ export const metadata: Metadata = {
 
 export default function TermsOfUse() {
   return (
-    <main className="flex-1 px-4 py-20 max-w-2xl mx-auto flex flex-col gap-8">
+    <main className="flex-1 px-4 py-20 flex flex-col gap-8
+    md:px-10
+    xl:w-[1154px] xl:mx-auto xl:px-0
+    ">
       <ScrollToTop />
       <h1>Terms of Use</h1>
       <p className="text-sm text-text/60">Last updated: June 2026</p>
@@ -43,8 +46,8 @@ export default function TermsOfUse() {
       </section>
 
       <section className="flex flex-col gap-3">
-        <h2>7. Termination</h2>
-        <p>We reserve the right to suspend or terminate access to the platform at our discretion, without notice, for conduct that we believe violates these Terms of Use or is harmful to other users.</p>
+        <h2>7. Content Accuracy</h2>
+        <p>We make reasonable efforts to ensure that the information presented on this website — including professional profiles, service descriptions, and consultation fees — is accurate and up to date. However, we do not guarantee the completeness or currency of any information displayed, and details are subject to change without notice.</p>
       </section>
 
       <section className="flex flex-col gap-3">
@@ -54,7 +57,7 @@ export default function TermsOfUse() {
 
       <section className="flex flex-col gap-3">
         <h2>9. Contact Us</h2>
-        <p>For questions about these Terms, contact us at <a href="mailto:email@email.com" className="text-primary hover:text-hover transition-colors">email@email.com</a>.</p>
+        <p>For questions about these Terms, contact us at <a href="mailto:aspiresconsultingservices@gmail.com" className="text-primary hover:text-hover transition-colors">aspiresconsultingservices@gmail.com</a>.</p>
       </section>
     </main>
   )
