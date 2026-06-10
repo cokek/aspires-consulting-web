@@ -33,9 +33,9 @@ const legal = [
 const Footer = () => {
   return (
     <footer className="w-full flex flex-col items-center overflow-x-hidden">
-      <span className="text-6xl text-text font-bold tracking-widest leading-none whitespace-nowrap overflow-hidden block -mb-3">
+      {/* <span className="text-6xl text-text font-bold tracking-widest leading-none whitespace-nowrap overflow-hidden block -mb-3">
         {MARQUEE_TEXT}
-      </span>
+      </span> */}
 
       <section className="w-full flex flex-col gap-12 py-12 px-4 bg-text text-background justify-center
       md:flex-row md:px-10
@@ -43,15 +43,17 @@ const Footer = () => {
       ">
 
         {/* Brand */}
-        <div className="flex items-center flex-col gap-6 md:items-start ">
+        <div className="flex items-center flex-col gap-6 md:items-start xl:w-fit">
           <Image src={iconWhite} alt="Logo" width={500} height={500} className="h-14 w-auto xl:h-22" />
           <span className="text-center md:text-left">Connecting you with the expertise that moves you forward.</span>
         </div>
 
 <div className="w-full flex flex-col gap-12 flex-wrap 
-md:flex-row">
+md:flex-row
+xl:gap-26
+">
           {/* Quick Links */}
-          <div className="flex flex-col items-center gap-4 md:items-start md:w-36">
+          <div className="flex flex-col items-center gap-4 md:items-start md:w-36 xl:w-fit">
           <h3 className="font-bold text-xl">Quick Links</h3>
           <ul className="flex flex-col items-center gap-3 md:items-start">
             {quickLinks.map(({ label, href }) => (
@@ -61,7 +63,7 @@ md:flex-row">
         </div>
 
         {/* Contacts */}
-        <div className="flex flex-col items-center gap-4 md:items-start">
+        <div className="flex flex-col items-center gap-4 md:items-start xl:w-fit">
           <h3 className="font-bold text-lg">Contacts</h3>
           <ul className="flex flex-col items-center gap-3 md:items-start">
             {contacts.map(({ label, href }) => (
@@ -71,7 +73,7 @@ md:flex-row">
         </div>
 
         {/* Socials */}
-        <div className="flex flex-col items-center gap-4 md:items-start md:w-36">
+        <div className="flex flex-col items-center gap-4 md:items-start md:w-36 xl:w-fit">
           <h3 className="font-bold text-lg">Socials</h3>
           <div className="flex items-center gap-6 md:items-start">
             {socials.map(({ icon: Icon, href, label }) => (
@@ -83,7 +85,7 @@ md:flex-row">
         </div>
 
         {/* Legal */}
-        <div className="flex flex-col items-center gap-4 md:items-start md:w-36">
+        <div className="flex flex-col items-center gap-4 md:items-start md:w-36 xl:w-fit">
           <h3 className="font-bold text-lg">Legal</h3>
           <ul className="flex flex-col items-center gap-3 md:items-start">
             {legal.map(({ label, href }) => (
